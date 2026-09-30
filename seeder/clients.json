@@ -1,2877 +1,492 @@
-[
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000001",
-    "display_name": "Sacha 0001",
-    "monthly_income_eur": 2100,
-    "monthly_expenses_eur": 1000,
-    "savings_balance_eur": 47250
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000002",
-    "display_name": "Sam 0002",
-    "monthly_income_eur": 2900,
-    "monthly_expenses_eur": 2300,
-    "savings_balance_eur": 8750
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000003",
-    "display_name": "Max 0003",
-    "monthly_income_eur": 2000,
-    "monthly_expenses_eur": 4300,
-    "savings_balance_eur": 5500
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000004",
-    "display_name": "Ari 0004",
-    "monthly_income_eur": 4100,
-    "monthly_expenses_eur": 1100,
-    "savings_balance_eur": 1750
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000005",
-    "display_name": "Camille 0005",
-    "monthly_income_eur": 2700,
-    "monthly_expenses_eur": 2300,
-    "savings_balance_eur": 32250
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000006",
-    "display_name": "Ari 0006",
-    "monthly_income_eur": 1500,
-    "monthly_expenses_eur": 4400,
-    "savings_balance_eur": 12500
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000007",
-    "display_name": "Max 0007",
-    "monthly_income_eur": 5500,
-    "monthly_expenses_eur": 4300,
-    "savings_balance_eur": 26750
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000008",
-    "display_name": "Robin 0008",
-    "monthly_income_eur": 4200,
-    "monthly_expenses_eur": 4600,
-    "savings_balance_eur": 17750
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000009",
-    "display_name": "Alex 0009",
-    "monthly_income_eur": 6200,
-    "monthly_expenses_eur": 1900,
-    "savings_balance_eur": 44500
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000010",
-    "display_name": "Jules 0010",
-    "monthly_income_eur": 3500,
-    "monthly_expenses_eur": 2600,
-    "savings_balance_eur": 9750
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000011",
-    "display_name": "Robin 0011",
-    "monthly_income_eur": 6200,
-    "monthly_expenses_eur": 3000,
-    "savings_balance_eur": 6500
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000012",
-    "display_name": "Camille 0012",
-    "monthly_income_eur": 3800,
-    "monthly_expenses_eur": 1500,
-    "savings_balance_eur": 22750
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000013",
-    "display_name": "Lou 0013",
-    "monthly_income_eur": 5200,
-    "monthly_expenses_eur": 2500,
-    "savings_balance_eur": 2750
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000014",
-    "display_name": "Max 0014",
-    "monthly_income_eur": 4300,
-    "monthly_expenses_eur": 4300,
-    "savings_balance_eur": 7750
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000015",
-    "display_name": "Jules 0015",
-    "monthly_income_eur": 1900,
-    "monthly_expenses_eur": 4400,
-    "savings_balance_eur": 18750
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000016",
-    "display_name": "Sacha 0016",
-    "monthly_income_eur": 5300,
-    "monthly_expenses_eur": 3200,
-    "savings_balance_eur": 36750
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000017",
-    "display_name": "Robin 0017",
-    "monthly_income_eur": 5900,
-    "monthly_expenses_eur": 1300,
-    "savings_balance_eur": 2750
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000018",
-    "display_name": "Sacha 0018",
-    "monthly_income_eur": 2800,
-    "monthly_expenses_eur": 2700,
-    "savings_balance_eur": 5000
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000019",
-    "display_name": "Robin 0019",
-    "monthly_income_eur": 2000,
-    "monthly_expenses_eur": 3300,
-    "savings_balance_eur": 17750
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000020",
-    "display_name": "Charlie 0020",
-    "monthly_income_eur": 5400,
-    "monthly_expenses_eur": 3200,
-    "savings_balance_eur": 10250
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000021",
-    "display_name": "Lou 0021",
-    "monthly_income_eur": 3600,
-    "monthly_expenses_eur": 2200,
-    "savings_balance_eur": 42750
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000022",
-    "display_name": "Sam 0022",
-    "monthly_income_eur": 5800,
-    "monthly_expenses_eur": 5000,
-    "savings_balance_eur": 4500
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000023",
-    "display_name": "Ari 0023",
-    "monthly_income_eur": 5400,
-    "monthly_expenses_eur": 1900,
-    "savings_balance_eur": 34000
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000024",
-    "display_name": "Max 0024",
-    "monthly_income_eur": 2900,
-    "monthly_expenses_eur": 1900,
-    "savings_balance_eur": 29500
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000025",
-    "display_name": "Jules 0025",
-    "monthly_income_eur": 3100,
-    "monthly_expenses_eur": 4900,
-    "savings_balance_eur": 44000
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000026",
-    "display_name": "Morgan 0026",
-    "monthly_income_eur": 2800,
-    "monthly_expenses_eur": 2900,
-    "savings_balance_eur": 49000
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000027",
-    "display_name": "Alex 0027",
-    "monthly_income_eur": 2800,
-    "monthly_expenses_eur": 1100,
-    "savings_balance_eur": 20000
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000028",
-    "display_name": "Jules 0028",
-    "monthly_income_eur": 3100,
-    "monthly_expenses_eur": 1300,
-    "savings_balance_eur": 13500
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000029",
-    "display_name": "Ari 0029",
-    "monthly_income_eur": 5900,
-    "monthly_expenses_eur": 2900,
-    "savings_balance_eur": 13500
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000030",
-    "display_name": "Sacha 0030",
-    "monthly_income_eur": 4500,
-    "monthly_expenses_eur": 3400,
-    "savings_balance_eur": 41000
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000031",
-    "display_name": "Charlie 0031",
-    "monthly_income_eur": 2300,
-    "monthly_expenses_eur": 2500,
-    "savings_balance_eur": 8750
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000032",
-    "display_name": "Robin 0032",
-    "monthly_income_eur": 6100,
-    "monthly_expenses_eur": 4400,
-    "savings_balance_eur": 34250
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000033",
-    "display_name": "Sam 0033",
-    "monthly_income_eur": 6100,
-    "monthly_expenses_eur": 4600,
-    "savings_balance_eur": 27250
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000034",
-    "display_name": "Ari 0034",
-    "monthly_income_eur": 3900,
-    "monthly_expenses_eur": 3200,
-    "savings_balance_eur": 14000
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000035",
-    "display_name": "Noor 0035",
-    "monthly_income_eur": 4600,
-    "monthly_expenses_eur": 4000,
-    "savings_balance_eur": 5750
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000036",
-    "display_name": "Alex 0036",
-    "monthly_income_eur": 2100,
-    "monthly_expenses_eur": 1800,
-    "savings_balance_eur": 40000
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000037",
-    "display_name": "Noor 0037",
-    "monthly_income_eur": 6400,
-    "monthly_expenses_eur": 3600,
-    "savings_balance_eur": 38000
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000038",
-    "display_name": "Camille 0038",
-    "monthly_income_eur": 3800,
-    "monthly_expenses_eur": 3300,
-    "savings_balance_eur": 38000
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000039",
-    "display_name": "Charlie 0039",
-    "monthly_income_eur": 4700,
-    "monthly_expenses_eur": 2500,
-    "savings_balance_eur": 35250
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000040",
-    "display_name": "Alex 0040",
-    "monthly_income_eur": 5700,
-    "monthly_expenses_eur": 1600,
-    "savings_balance_eur": 43500
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000041",
-    "display_name": "Morgan 0041",
-    "monthly_income_eur": 6200,
-    "monthly_expenses_eur": 2600,
-    "savings_balance_eur": 49000
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000042",
-    "display_name": "Sacha 0042",
-    "monthly_income_eur": 3500,
-    "monthly_expenses_eur": 1600,
-    "savings_balance_eur": 18750
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000043",
-    "display_name": "Jules 0043",
-    "monthly_income_eur": 2400,
-    "monthly_expenses_eur": 3800,
-    "savings_balance_eur": 0
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000044",
-    "display_name": "Max 0044",
-    "monthly_income_eur": 6000,
-    "monthly_expenses_eur": 2500,
-    "savings_balance_eur": 32000
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000045",
-    "display_name": "Noor 0045",
-    "monthly_income_eur": 4600,
-    "monthly_expenses_eur": 1500,
-    "savings_balance_eur": 40000
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000046",
-    "display_name": "Sam 0046",
-    "monthly_income_eur": 5400,
-    "monthly_expenses_eur": 4100,
-    "savings_balance_eur": 38750
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000047",
-    "display_name": "Robin 0047",
-    "monthly_income_eur": 2300,
-    "monthly_expenses_eur": 3200,
-    "savings_balance_eur": 48750
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000048",
-    "display_name": "Noor 0048",
-    "monthly_income_eur": 4800,
-    "monthly_expenses_eur": 4200,
-    "savings_balance_eur": 0
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000049",
-    "display_name": "Ari 0049",
-    "monthly_income_eur": 3400,
-    "monthly_expenses_eur": 4000,
-    "savings_balance_eur": 1000
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000050",
-    "display_name": "Camille 0050",
-    "monthly_income_eur": 3700,
-    "monthly_expenses_eur": 2800,
-    "savings_balance_eur": 15250
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000051",
-    "display_name": "Alex 0051",
-    "monthly_income_eur": 2900,
-    "monthly_expenses_eur": 4500,
-    "savings_balance_eur": 5000
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000052",
-    "display_name": "Camille 0052",
-    "monthly_income_eur": 6000,
-    "monthly_expenses_eur": 4000,
-    "savings_balance_eur": 4250
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000053",
-    "display_name": "Morgan 0053",
-    "monthly_income_eur": 6300,
-    "monthly_expenses_eur": 1700,
-    "savings_balance_eur": 8000
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000054",
-    "display_name": "Sacha 0054",
-    "monthly_income_eur": 4400,
-    "monthly_expenses_eur": 4400,
-    "savings_balance_eur": 10500
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000055",
-    "display_name": "Sam 0055",
-    "monthly_income_eur": 4700,
-    "monthly_expenses_eur": 4700,
-    "savings_balance_eur": 27000
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000056",
-    "display_name": "Robin 0056",
-    "monthly_income_eur": 4800,
-    "monthly_expenses_eur": 2100,
-    "savings_balance_eur": 45500
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000057",
-    "display_name": "Sam 0057",
-    "monthly_income_eur": 3900,
-    "monthly_expenses_eur": 5000,
-    "savings_balance_eur": 23750
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000058",
-    "display_name": "Charlie 0058",
-    "monthly_income_eur": 4700,
-    "monthly_expenses_eur": 3700,
-    "savings_balance_eur": 7500
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000059",
-    "display_name": "Robin 0059",
-    "monthly_income_eur": 2800,
-    "monthly_expenses_eur": 1300,
-    "savings_balance_eur": 21500
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000060",
-    "display_name": "Alex 0060",
-    "monthly_income_eur": 5100,
-    "monthly_expenses_eur": 4400,
-    "savings_balance_eur": 14500
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000061",
-    "display_name": "Ari 0061",
-    "monthly_income_eur": 2800,
-    "monthly_expenses_eur": 900,
-    "savings_balance_eur": 4500
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000062",
-    "display_name": "Max 0062",
-    "monthly_income_eur": 5400,
-    "monthly_expenses_eur": 1200,
-    "savings_balance_eur": 14500
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000063",
-    "display_name": "Camille 0063",
-    "monthly_income_eur": 1600,
-    "monthly_expenses_eur": 3000,
-    "savings_balance_eur": 4500
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000064",
-    "display_name": "Morgan 0064",
-    "monthly_income_eur": 2900,
-    "monthly_expenses_eur": 2600,
-    "savings_balance_eur": 42750
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000065",
-    "display_name": "Charlie 0065",
-    "monthly_income_eur": 2700,
-    "monthly_expenses_eur": 4300,
-    "savings_balance_eur": 8250
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000066",
-    "display_name": "Max 0066",
-    "monthly_income_eur": 5000,
-    "monthly_expenses_eur": 4500,
-    "savings_balance_eur": 30250
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000067",
-    "display_name": "Robin 0067",
-    "monthly_income_eur": 6400,
-    "monthly_expenses_eur": 3900,
-    "savings_balance_eur": 26000
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000068",
-    "display_name": "Robin 0068",
-    "monthly_income_eur": 2000,
-    "monthly_expenses_eur": 1500,
-    "savings_balance_eur": 42000
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000069",
-    "display_name": "Jules 0069",
-    "monthly_income_eur": 3600,
-    "monthly_expenses_eur": 3600,
-    "savings_balance_eur": 26250
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000070",
-    "display_name": "Charlie 0070",
-    "monthly_income_eur": 6000,
-    "monthly_expenses_eur": 1200,
-    "savings_balance_eur": 43000
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000071",
-    "display_name": "Sacha 0071",
-    "monthly_income_eur": 5500,
-    "monthly_expenses_eur": 1500,
-    "savings_balance_eur": 3750
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000072",
-    "display_name": "Jules 0072",
-    "monthly_income_eur": 6000,
-    "monthly_expenses_eur": 3000,
-    "savings_balance_eur": 6750
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000073",
-    "display_name": "Robin 0073",
-    "monthly_income_eur": 2600,
-    "monthly_expenses_eur": 2100,
-    "savings_balance_eur": 34250
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000074",
-    "display_name": "Charlie 0074",
-    "monthly_income_eur": 2200,
-    "monthly_expenses_eur": 3600,
-    "savings_balance_eur": 11500
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000075",
-    "display_name": "Sam 0075",
-    "monthly_income_eur": 4300,
-    "monthly_expenses_eur": 2400,
-    "savings_balance_eur": 4750
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000076",
-    "display_name": "Charlie 0076",
-    "monthly_income_eur": 6500,
-    "monthly_expenses_eur": 4400,
-    "savings_balance_eur": 6250
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000077",
-    "display_name": "Alex 0077",
-    "monthly_income_eur": 5500,
-    "monthly_expenses_eur": 4300,
-    "savings_balance_eur": 750
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000078",
-    "display_name": "Camille 0078",
-    "monthly_income_eur": 6200,
-    "monthly_expenses_eur": 2400,
-    "savings_balance_eur": 10500
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000079",
-    "display_name": "Jules 0079",
-    "monthly_income_eur": 4500,
-    "monthly_expenses_eur": 3900,
-    "savings_balance_eur": 13500
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000080",
-    "display_name": "Jules 0080",
-    "monthly_income_eur": 1700,
-    "monthly_expenses_eur": 1900,
-    "savings_balance_eur": 24250
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000081",
-    "display_name": "Alex 0081",
-    "monthly_income_eur": 3800,
-    "monthly_expenses_eur": 2500,
-    "savings_balance_eur": 50000
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000082",
-    "display_name": "Charlie 0082",
-    "monthly_income_eur": 3200,
-    "monthly_expenses_eur": 3600,
-    "savings_balance_eur": 44500
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000083",
-    "display_name": "Max 0083",
-    "monthly_income_eur": 6400,
-    "monthly_expenses_eur": 4400,
-    "savings_balance_eur": 42250
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000084",
-    "display_name": "Max 0084",
-    "monthly_income_eur": 4500,
-    "monthly_expenses_eur": 1800,
-    "savings_balance_eur": 12000
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000085",
-    "display_name": "Sam 0085",
-    "monthly_income_eur": 2700,
-    "monthly_expenses_eur": 1200,
-    "savings_balance_eur": 37000
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000086",
-    "display_name": "Max 0086",
-    "monthly_income_eur": 4800,
-    "monthly_expenses_eur": 1200,
-    "savings_balance_eur": 47750
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000087",
-    "display_name": "Lou 0087",
-    "monthly_income_eur": 1700,
-    "monthly_expenses_eur": 1200,
-    "savings_balance_eur": 37250
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000088",
-    "display_name": "Charlie 0088",
-    "monthly_income_eur": 4600,
-    "monthly_expenses_eur": 4200,
-    "savings_balance_eur": 10000
-  },
-  {
-    "situation": "scam_concern",
-    "age_band": "65+",
-    "life_stage": "retired",
-    "occupation": "retired",
-    "products": [
-      "current_account",
-      "debit_card",
-      "savings_account"
-    ],
-    "signals": [
-      "suspicious_transfer_reported",
-      "security_help_page_viewed",
-      "branch_visit_recent"
-    ],
-    "needs": [
-      "secure_account",
-      "speak_to_trusted_support"
-    ],
-    "next_best_action": "Show immediate security guidance and offer direct access to a human adviser.",
-    "impact_goal": "Resolve a possible fraud concern quickly",
-    "preferred_channel": "phone",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000089",
-    "display_name": "Alex 0089",
-    "monthly_income_eur": 4600,
-    "monthly_expenses_eur": 1400,
-    "savings_balance_eur": 11750
-  },
-  {
-    "situation": "student_budgeting",
-    "age_band": "18-24",
-    "life_stage": "student",
-    "occupation": "student",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "education_payment_received",
-      "small_frequent_card_payments",
-      "budget_tool_opened"
-    ],
-    "needs": [
-      "manage_variable_income",
-      "avoid_unexpected_fees"
-    ],
-    "next_best_action": "Offer a lightweight spending overview and reminders the customer controls.",
-    "impact_goal": "Build financial confidence while studying",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000090",
-    "display_name": "Camille 0090",
-    "monthly_income_eur": 5200,
-    "monthly_expenses_eur": 1300,
-    "savings_balance_eur": 43000
-  },
-  {
-    "situation": "self_employed_income_variability",
-    "age_band": "35-44",
-    "life_stage": "self_employed",
-    "occupation": "self_employed",
-    "products": [
-      "current_account",
-      "business_account",
-      "savings_account"
-    ],
-    "signals": [
-      "irregular_income",
-      "tax_payment_due_soon",
-      "invoice_paid_late"
-    ],
-    "needs": [
-      "smooth_income_volatility",
-      "plan_tax_reserve"
-    ],
-    "next_best_action": "Offer an opt-in cash-flow forecast with tax-date reminders.",
-    "impact_goal": "Make variable income easier to plan",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000091",
-    "display_name": "Robin 0091",
-    "monthly_income_eur": 3900,
-    "monthly_expenses_eur": 1600,
-    "savings_balance_eur": 36250
-  },
-  {
-    "situation": "sustainable_renovation",
-    "age_band": "35-44",
-    "life_stage": "homeowner_planning_renovation",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "energy_bill_increased",
-      "renovation_information_viewed",
-      "green_finance_page_viewed"
-    ],
-    "needs": [
-      "compare_renovation_financing",
-      "understand_energy_savings"
-    ],
-    "next_best_action": "Present relevant renovation financing information and independent planning tools.",
-    "impact_goal": "Support an informed energy-efficiency project",
-    "preferred_channel": "web_banking",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000092",
-    "display_name": "Robin 0092",
-    "monthly_income_eur": 5100,
-    "monthly_expenses_eur": 4700,
-    "savings_balance_eur": 2500
-  },
-  {
-    "situation": "moving_abroad",
-    "age_band": "25-34",
-    "life_stage": "planning_international_move",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card",
-      "travel_insurance"
-    ],
-    "signals": [
-      "international_transfers_increased",
-      "travel_card_controls_viewed",
-      "address_update_started"
-    ],
-    "needs": [
-      "manage_cross_border_banking",
-      "understand_card_and_transfer_fees"
-    ],
-    "next_best_action": "Offer a move checklist with country-specific account and payment information.",
-    "impact_goal": "Avoid disruption during an international move",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000093",
-    "display_name": "Ari 0093",
-    "monthly_income_eur": 1900,
-    "monthly_expenses_eur": 3500,
-    "savings_balance_eur": 42000
-  },
-  {
-    "situation": "first_time_investing",
-    "age_band": "25-34",
-    "life_stage": "building_long_term_savings",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account"
-    ],
-    "signals": [
-      "investment_basics_viewed",
-      "regular_savings_established",
-      "risk_profile_not_completed"
-    ],
-    "needs": [
-      "understand_investment_risk",
-      "compare_long_term_options"
-    ],
-    "next_best_action": "Offer neutral investment education and a risk-profile flow before any product proposal.",
-    "impact_goal": "Support informed decisions without pressure",
-    "preferred_channel": "mobile_app",
-    "contact_consent": false,
-    "client_id": "KBC-DEMO-000094",
-    "display_name": "Ari 0094",
-    "monthly_income_eur": 5000,
-    "monthly_expenses_eur": 4200,
-    "savings_balance_eur": 20000
-  },
-  {
-    "situation": "insurance_claim_support",
-    "age_band": "45-54",
-    "life_stage": "handling_home_damage",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "home_loan",
-      "home_insurance"
-    ],
-    "signals": [
-      "claim_started",
-      "claim_status_checked_repeatedly",
-      "support_contact_requested"
-    ],
-    "needs": [
-      "understand_claim_status",
-      "know_next_required_step"
-    ],
-    "next_best_action": "Provide a clear claim status, next step, and one-tap route to the claims team.",
-    "impact_goal": "Reduce uncertainty while resolving a claim",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000095",
-    "display_name": "Sam 0095",
-    "monthly_income_eur": 2700,
-    "monthly_expenses_eur": 2900,
-    "savings_balance_eur": 15250
-  },
-  {
-    "situation": "prefers_human_support",
-    "age_band": "55-64",
-    "life_stage": "planning_retirement",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "pension_savings"
-    ],
-    "signals": [
-      "retirement_planning_page_viewed",
-      "digital_flow_abandoned",
-      "branch_appointment_requested"
-    ],
-    "needs": [
-      "understand_retirement_income",
-      "get_personal_explanation"
-    ],
-    "next_best_action": "Offer an adviser appointment and preserve progress from the digital journey.",
-    "impact_goal": "Make complex planning accessible across channels",
-    "preferred_channel": "branch",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000096",
-    "display_name": "Sam 0096",
-    "monthly_income_eur": 3900,
-    "monthly_expenses_eur": 1700,
-    "savings_balance_eur": 42750
-  },
-  {
-    "situation": "first_job",
-    "age_band": "18-24",
-    "life_stage": "first_job",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "debit_card"
-    ],
-    "signals": [
-      "salary_payment_started",
-      "mobile_app_active",
-      "savings_balance_low"
-    ],
-    "needs": [
-      "build_emergency_savings",
-      "understand_first_salary"
-    ],
-    "next_best_action": "Offer a flexible monthly savings plan with a clear pause option.",
-    "impact_goal": "Start a sustainable savings habit",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000097",
-    "display_name": "Sacha 0097",
-    "monthly_income_eur": 3300,
-    "monthly_expenses_eur": 3800,
-    "savings_balance_eur": 20000
-  },
-  {
-    "situation": "home_purchase",
-    "age_band": "25-34",
-    "life_stage": "planning_home_purchase",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "debit_card"
-    ],
-    "signals": [
-      "mortgage_calculator_used",
-      "property_search_payments",
-      "savings_growing"
-    ],
-    "needs": [
-      "estimate_borrowing_capacity",
-      "plan_purchase_costs"
-    ],
-    "next_best_action": "Offer a mortgage readiness check and a transparent cost breakdown.",
-    "impact_goal": "Make a confident, affordable home purchase",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000098",
-    "display_name": "Camille 0098",
-    "monthly_income_eur": 1400,
-    "monthly_expenses_eur": 3800,
-    "savings_balance_eur": 39750
-  },
-  {
-    "situation": "cash_flow_pressure",
-    "age_band": "35-44",
-    "life_stage": "managing_monthly_budget",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "credit_card",
-      "home_insurance"
-    ],
-    "signals": [
-      "recurring_balance_dips",
-      "bill_payment_late",
-      "subscription_spending_increased"
-    ],
-    "needs": [
-      "avoid_overdraft",
-      "regain_budget_visibility"
-    ],
-    "next_best_action": "Privately offer a budget review and explain available support options.",
-    "impact_goal": "Reduce financial stress without judgment",
-    "preferred_channel": "secure_message",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000099",
-    "display_name": "Ari 0099",
-    "monthly_income_eur": 2000,
-    "monthly_expenses_eur": 1300,
-    "savings_balance_eur": 34250
-  },
-  {
-    "situation": "new_parent",
-    "age_band": "25-34",
-    "life_stage": "new_parent",
-    "occupation": "employee",
-    "products": [
-      "current_account",
-      "savings_account",
-      "home_insurance"
-    ],
-    "signals": [
-      "family_related_recurring_spend",
-      "new_savings_goal_created",
-      "insurance_page_viewed"
-    ],
-    "needs": [
-      "plan_for_child_costs",
-      "review_family_protection"
-    ],
-    "next_best_action": "Offer an optional family financial check-in covering savings and protection.",
-    "impact_goal": "Help plan for a new family expense horizon",
-    "preferred_channel": "mobile_app",
-    "contact_consent": true,
-    "client_id": "KBC-DEMO-000100",
-    "display_name": "Robin 0100",
-    "monthly_income_eur": 4600,
-    "monthly_expenses_eur": 2500,
-    "savings_balance_eur": 8250
-  }
-]
+{
+  "clients": [
+    {
+      "client_id": "KBC-DEMO-000001",
+      "display_name": "Sacha Janssens",
+      "total_balance": 16000,
+      "income": 1500,
+      "spending": 1400,
+      "investment_balance": 8750,
+      "mobility_pct": 19,
+      "groceries_pct": 14,
+      "bars_restaurants_pct": 55,
+      "other_pct": 12
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "display_name": "Camille Dubois",
+      "total_balance": 41500,
+      "income": 4800,
+      "spending": 2600,
+      "investment_balance": 24500,
+      "mobility_pct": 28,
+      "groceries_pct": 13,
+      "bars_restaurants_pct": 25,
+      "other_pct": 34
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "display_name": "Alex Willems",
+      "total_balance": 18250,
+      "income": 1800,
+      "spending": 1700,
+      "investment_balance": 7500,
+      "mobility_pct": 33,
+      "groceries_pct": 26,
+      "bars_restaurants_pct": 13,
+      "other_pct": 28
+    }
+  ],
+  "transactions": [
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Friterie",
+      "amount": 14.69,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Le Pain Quotidien",
+      "amount": 15.21,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Proxy",
+      "amount": 8.05,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Färm",
+      "amount": 53.24,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "La Belle Vie",
+      "amount": 70.33,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Lukoy",
+      "amount": 31.87,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Bocca",
+      "amount": 24.58,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Exki",
+      "amount": 15.14,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "De Lijn",
+      "amount": 27.76,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Brasserie Nationale",
+      "amount": 43.38,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "SNCB",
+      "amount": 4.93,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Proxy",
+      "amount": 106.83,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Café Central",
+      "amount": 62.25,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Q8",
+      "amount": 35.13,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "H&M",
+      "amount": 173.7,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Pizza Hut",
+      "amount": 56.95,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Bistro L",
+      "amount": 35.36,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Brasserie Nationale",
+      "amount": 80.12,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Café Belga",
+      "amount": 56.89,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Café Central",
+      "amount": 20.58,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Restaurant Yuzu",
+      "amount": 60.99,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Bio-Planet",
+      "amount": 101.93,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Café Central",
+      "amount": 71.28,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Sushi Bar",
+      "amount": 28.62,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Proxy",
+      "amount": 105.78,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Cru",
+      "amount": 50.5,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Spotify",
+      "amount": 31.15,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Parko",
+      "amount": 25.92,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Proxy",
+      "amount": 54.27,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Bistro L",
+      "amount": 24.89,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Netflix",
+      "amount": 100.22,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Exki",
+      "amount": 19.77,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Cambio",
+      "amount": 19.86,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "SNCB",
+      "amount": 27.42,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "La Belle Vie",
+      "amount": 82.77,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000001",
+      "name": "Le Pain Quotidien",
+      "amount": 60.38,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Brasserie Nationale",
+      "amount": 75.44,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Dott",
+      "amount": 34.65,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Exki",
+      "amount": 75.03,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Färm",
+      "amount": 75.03,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Lukoy",
+      "amount": 24.96,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Netflix",
+      "amount": 183.94,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Pizza Hut",
+      "amount": 9.5,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Decathlon",
+      "amount": 50.17,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Voi",
+      "amount": 42.69,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Uber",
+      "amount": 37.0,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Netflix",
+      "amount": 153.87,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Uber",
+      "amount": 42.69,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Dott",
+      "amount": 39.45,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Café Central",
+      "amount": 79.53,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Action",
+      "amount": 42.63,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Bio-Planet",
+      "amount": 55.38,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Exki",
+      "amount": 27.09,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Shell",
+      "amount": 27.09,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Q8",
+      "amount": 1.81,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000002",
+      "name": "Amazon",
+      "amount": 48.1,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Apple Store",
+      "amount": 116.51,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Uber",
+      "amount": 36.63,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Texaco",
+      "amount": 30.17,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "OKay",
+      "amount": 58.71,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Bol.com",
+      "amount": 131.73,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Le Pain Quotidien",
+      "amount": 39.0,
+      "category": "bars_restaurants"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Delhaize",
+      "amount": 33.6,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Uber",
+      "amount": 7.6,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Uber",
+      "amount": 12.37,
+      "category": "mobility"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Spotify",
+      "amount": 162.18,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Zalando",
+      "amount": 12.97,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Amazon",
+      "amount": 193.89,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "H&M",
+      "amount": 35.76,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Aldi",
+      "amount": 104.43,
+      "category": "groceries"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "IKEA",
+      "amount": 77.66,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Decathlon",
+      "amount": 185.52,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Decathlon",
+      "amount": 86.33,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Netflix",
+      "amount": 133.39,
+      "category": "other"
+    },
+    {
+      "client_id": "KBC-DEMO-000003",
+      "name": "Aldi",
+      "amount": 39.12,
+      "category": "groceries"
+    }
+  ]
+}

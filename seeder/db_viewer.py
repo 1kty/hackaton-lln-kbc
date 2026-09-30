@@ -1,6 +1,5 @@
 """Streamlit viewer for the synthetic customer SQLite database."""
 
-import json
 import sqlite3
 from pathlib import Path
 
@@ -21,49 +20,47 @@ connection = sqlite3.connect(DATABASE_PATH)
 connection.row_factory = sqlite3.Row
 
 try:
-    situations = [row[0] for row in connection.execute("SELECT DISTINCT situation FROM customers ORDER BY situation")]
-    channels = [row[0] for row in connection.execute("SELECT DISTINCT preferred_channel FROM customers ORDER BY preferred_channel")]
+    categories = [row[0] for row in connection.execute("SELECT DISTINCT category FROM transactions ORDER BY category")]
 
     st.sidebar.header("Filtres")
     search = st.sidebar.text_input("Recherche", placeholder="ID ou nom")
-    selected_situation = st.sidebar.selectbox("Situation", ["Toutes", *situations])
-    selected_channel = st.sidebar.selectbox("Canal préféré", ["Tous", *channels])
+    selected_category = st.sidebar.selectbox("Catégorie", ["Toutes", *categories])
     page_size = st.sidebar.selectbox("Profils par page", [10, 25, 50, 100], index=1)
 
     conditions = []
     parameters: list[str] = []
     if search:
-        conditions.append("(client_id LIKE ? OR display_name LIKE ?)")
+        conditions.append("(c.client_id LIKE ? OR c.display_name LIKE ?)")
         parameters.extend([f"%{search}%", f"%{search}%"])
-    if selected_situation != "Toutes":
-        conditions.append("situation = ?")
-        parameters.append(selected_situation)
-    if selected_channel != "Tous":
-        conditions.append("preferred_channel = ?")
-        parameters.append(selected_channel)
+    if selected_category != "Toutes":
+        conditions.append(
+            "c.client_id IN (SELECT DISTINCT client_id FROM transactions WHERE category = ?)"
+        )
+        parameters.append(selected_category)
 
     where_clause = f"WHERE {' AND '.join(conditions)}" if conditions else ""
     matching_count = connection.execute(
-        f"SELECT COUNT(*) FROM customers {where_clause}", parameters
+        f"SELECT COUNT(*) FROM customers c {where_clause}", parameters
     ).fetchone()[0]
-    opted_in_count = connection.execute(
-        f"SELECT COUNT(*) FROM customers {where_clause} {'AND' if where_clause else 'WHERE'} contact_consent = 1",
+    tx_count = connection.execute(
+        f"SELECT COUNT(*) FROM transactions t JOIN customers c ON t.client_id = c.client_id {where_clause}",
         parameters,
     ).fetchone()[0]
 
-    metrics = st.columns(2)
+    metrics = st.columns(3)
     metrics[0].metric("Profils correspondants", matching_count)
-    metrics[1].metric("Avec consentement de contact", opted_in_count)
+    metrics[1].metric("Transactions", tx_count)
+    metrics[2].metric("Categories", len(categories))
 
     page_count = max(1, (matching_count + page_size - 1) // page_size)
     page_number = st.sidebar.number_input("Page", min_value=1, max_value=page_count, value=1)
     records = connection.execute(
         f"""
-        SELECT client_id, display_name, situation, age_band, occupation,
-               preferred_channel, contact_consent, monthly_income_eur,
-               monthly_expenses_eur, savings_balance_eur
-        FROM customers {where_clause}
-        ORDER BY client_id
+        SELECT c.client_id, c.display_name, c.total_balance, c.income, c.spending,
+               c.investment_balance, c.mobility_pct, c.groceries_pct,
+               c.bars_restaurants_pct, c.other_pct
+        FROM customers c {where_clause}
+        ORDER BY c.client_id
         LIMIT ? OFFSET ?
         """,
         [*parameters, page_size, (page_number - 1) * page_size],
@@ -74,14 +71,14 @@ try:
             {
                 "ID": row["client_id"],
                 "Client": row["display_name"],
-                "Situation": row["situation"],
-                "Tranche d'âge": row["age_band"],
-                "Profession": row["occupation"],
-                "Canal préféré": row["preferred_channel"],
-                "Consentement": "Oui" if row["contact_consent"] else "Non",
-                "Revenus mensuels (€)": row["monthly_income_eur"],
-                "Dépenses mensuelles (€)": row["monthly_expenses_eur"],
-                "Épargne (€)": row["savings_balance_eur"],
+                "Balance (€)": f"{row['total_balance']:,.2f}",
+                "Income (€)": f"{row['income']:,.2f}",
+                "Spending (€)": f"{row['spending']:,.2f}",
+                "Investment (€)": f"{row['investment_balance']:,.2f}",
+                "Mobility %": row["mobility_pct"],
+                "Groceries %": row["groceries_pct"],
+                "Bars & Rest. %": row["bars_restaurants_pct"],
+                "Other %": row["other_pct"],
             }
             for row in records
         ]
@@ -98,11 +95,20 @@ try:
             "SELECT * FROM customers WHERE client_id = ?", (selected_id,)
         ).fetchone()
         profile = dict(detail)
-        for field in ("products", "signals", "needs"):
-            profile[field] = json.loads(profile[field])
-        profile["contact_consent"] = bool(profile["contact_consent"])
-        with st.expander("Signaux, besoins et accompagnement proposé", expanded=True):
+
+        col1, col2 = st.columns([1, 2])
+        with col1:
             st.json(profile)
+        with col2:
+            transactions = connection.execute(
+                "SELECT name, amount, category FROM transactions WHERE client_id = ? ORDER BY id",
+                (selected_id,),
+            ).fetchall()
+            tx_rows = [
+                {"Name": t["name"], "Amount (€)": f"{t['amount']:.2f}", "Category": t["category"]}
+                for t in transactions
+            ]
+            st.dataframe(tx_rows, use_container_width=True, hide_index=True)
     else:
         st.info("Aucun profil ne correspond à ces filtres.")
 finally:
