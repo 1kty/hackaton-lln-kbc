@@ -1,11 +1,34 @@
+"use client"
+
+import * as React from "react"
 import { BalanceCard } from "@/components/balance-card"
 import { ExpenseList } from "@/components/expense-list"
 import { FinanceAssistant } from "@/components/finance-assistant"
 import { KbcLogo } from "@/components/kbc-logo"
 import { MonthlyOverview } from "@/components/monthly-overview"
 import { ThemeToggle } from "@/components/theme-toggle"
+import { fetchCustomer, type Customer } from "@/lib/api"
+
+const CLIENT_ID = "KBC-DEMO-000001"
 
 export default function Page() {
+  const [customer, setCustomer] = React.useState<Customer | null>(null)
+  const [error, setError] = React.useState<string | null>(null)
+
+  React.useEffect(() => {
+    fetchCustomer(CLIENT_ID)
+      .then(setCustomer)
+      .catch((err) => setError(err.message))
+  }, [])
+
+  if (error) {
+    return <div className="m-5 text-destructive">Error: {error}</div>
+  }
+
+  if (!customer) {
+    return <div className="m-5 text-muted-foreground">Loading…</div>
+  }
+
   return (
     <div className="m-5 space-y-5 pb-24">
       <header className="flex items-center justify-between gap-4">
@@ -20,17 +43,14 @@ export default function Page() {
 
       <div className="grid gap-5 lg:grid-cols-2">
         <BalanceCard
-          balance={3847.62}
-          currency="EUR"
-          cardHolder="Sophie Laurent"
-          cardNumber="4532 8814 2091 7743"
-          expiry="11/28"
+          balance={customer.total_balance}
+          cardHolder={customer.display_name}
         />
-        <MonthlyOverview />
+        <MonthlyOverview customer={customer} />
       </div>
-      <ExpenseList />
+      <ExpenseList transactions={customer.transactions} />
 
-      <FinanceAssistant />
+      <FinanceAssistant clientId={CLIENT_ID} />
     </div>
   )
 }

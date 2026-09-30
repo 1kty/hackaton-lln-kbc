@@ -27,25 +27,12 @@ import {
   MessageScrollerProvider,
   MessageScrollerViewport,
 } from "@/components/ui/message-scroller"
-import { formatEuro } from "@/lib/format"
+import { sendChatMessage } from "@/lib/api"
 
 type ChatMessage = {
   id: string
   role: "assistant" | "user"
   content: string
-}
-
-const USER_CONTEXT = {
-  balance: 3847.62,
-  income: 3420,
-  expenses: 1875.4,
-  invest: 450,
-  categories: [
-    { label: "Courses", percent: 35, amount: 656.39 },
-    { label: "Mobilité", percent: 28, amount: 525.11 },
-    { label: "Bars & restaurants", percent: 22, amount: 412.59 },
-    { label: "Autres", percent: 15, amount: 281.31 },
-  ],
 }
 
 const SUGGESTIONS = [
@@ -54,43 +41,6 @@ const SUGGESTIONS = [
   "Puis-je investir davantage ?",
   "Résume mon budget",
 ]
-
-function analyzeReply(prompt: string): string {
-  const q = prompt.toLowerCase()
-  const { balance, income, expenses, invest, categories } = USER_CONTEXT
-  const leftover = income - expenses - invest
-  const top = categories[0]
-
-  if (q.includes("économ") || q.includes("économiser") || q.includes("épargner")) {
-    return `En croisant ton solde (${formatEuro(balance)}) et tes sorties, le levier le plus net est **${top.label}** (${top.percent} % · ${formatEuro(top.amount)}).\n\nSi tu réduis cette catégorie de ~15 %, tu libères environ ${formatEuro(top.amount * 0.15)} ce mois-ci — idéal à basculer vers ton épargne ou ton investissement.`
-  }
-
-  if (q.includes("restaurant") || q.includes("bars") || q.includes("sortie")) {
-    const resto = categories.find((c) => c.label.includes("Bars"))!
-    return `Tes sorties **Bars & restaurants** représentent ${resto.percent} % des dépenses (${formatEuro(resto.amount)}).\n\nAstuce ciblée : plafonne à 300 € / mois. Tu garderais ~${formatEuro(resto.amount - 300)} sans toucher aux courses ni à la mobilité.`
-  }
-
-  if (q.includes("invest")) {
-    return `Tu mets déjà ${formatEuro(invest)} de côté chaque mois, et il te reste environ ${formatEuro(leftover)} après dépenses.\n\nTu pourrais augmenter l’investissement de 100–150 € sans mettre ton solde sous pression, tant que tu gardes un coussin de sécurité (~1 000 €).`
-  }
-
-  if (
-    q.includes("budget") ||
-    q.includes("résume") ||
-    q.includes("resume") ||
-    q.includes("aperçu") ||
-    q.includes("apercu")
-  ) {
-    return `Voici ton aperçu ciblé :\n\n• Revenus : ${formatEuro(income)}\n• Dépenses : ${formatEuro(expenses)}\n• Investir : ${formatEuro(invest)}\n• Reste disponible : ~${formatEuro(leftover)}\n\nPoint d’attention : **${top.label}** concentre ${top.percent} % de tes sorties. Je peux te proposer un plan d’ajustement si tu veux.`
-  }
-
-  if (q.includes("mobilité") || q.includes("mobilite") || q.includes("transport")) {
-    const mob = categories.find((c) => c.label === "Mobilité")!
-    return `La mobilité pèse ${mob.percent} % (${formatEuro(mob.amount)}). Avec ton abonnement STIB déjà en place, vérifie les trajets ponctuels (taxi, parking) — c’est souvent là que le surplus se cache.`
-  }
-
-  return `D’après tes données du mois : solde ${formatEuro(balance)}, dépenses ${formatEuro(expenses)} dont ${top.percent} % en ${top.label}.\n\nDis-moi ce que tu veux simplifier — budget, économies, investissement ou une catégorie précise — et je te donne une action concrète.`
-}
 
 function AssistantMascot({ className }: { className?: string }) {
   return (
@@ -119,7 +69,7 @@ function formatMessage(content: string) {
   })
 }
 
-export function FinanceAssistant() {
+export function FinanceAssistant({ clientId }: { clientId: string }) {
   const [open, setOpen] = React.useState(false)
   const [input, setInput] = React.useState("")
   const [typing, setTyping] = React.useState(false)
@@ -128,11 +78,11 @@ export function FinanceAssistant() {
       id: "welcome",
       role: "assistant",
       content:
-        "Salut ! Je suis Bryan, ton assistant KBC. J’analyse ton solde, tes dépenses et tes investissements pour te proposer une aide ciblée. Que veux-tu simplifier aujourd’hui ?",
+        "Salut ! Je suis Bryan, ton assistant KBC. J'analyse ton solde, tes dépenses et tes investissements pour te proposer une aide ciblée. Que veux-tu simplifier aujourd'hui ?",
     },
   ])
 
-  function sendMessage(text: string) {
+  async function sendMessage(text: string) {
     const trimmed = text.trim()
     if (!trimmed || typing) return
 
@@ -146,17 +96,28 @@ export function FinanceAssistant() {
     setInput("")
     setTyping(true)
 
-    window.setTimeout(() => {
+    try {
+      const reply = await sendChatMessage(clientId, trimmed, messages)
       setMessages((prev) => [
         ...prev,
         {
           id: `a-${Date.now()}`,
           role: "assistant",
-          content: analyzeReply(trimmed),
+          content: reply,
         },
       ])
+    } catch {
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: `a-${Date.now()}`,
+          role: "assistant",
+          content: "Désolé, une erreur est survenue. Réessaie dans un instant.",
+        },
+      ])
+    } finally {
       setTyping(false)
-    }, 700)
+    }
   }
 
   return (
@@ -164,7 +125,7 @@ export function FinanceAssistant() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        aria-label="Ouvrir l’assistant Bryan"
+        aria-label="Ouvrir l'assistant Bryan"
         className={cn(
           "fixed right-5 bottom-5 z-40 flex size-16 items-center justify-center rounded-full",
           "bg-card shadow-lg ring-2 ring-primary/30",

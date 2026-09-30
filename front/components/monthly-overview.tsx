@@ -17,56 +17,60 @@ import {
 } from "@/components/ui/card"
 import { formatEuro } from "@/lib/format"
 import { cn } from "cn"
+import type { Customer } from "@/lib/api"
 
-const summary = [
-  {
-    label: "Revenus",
-    amount: 3420,
-    change: "+1,8 %",
-    icon: ArrowDownLeftIcon,
-  },
-  {
-    label: "Dépenses",
-    amount: 1875.4,
-    change: "−4,5 %",
-    icon: ArrowUpRightIcon,
-  },
-  {
-    label: "Investir",
-    amount: 450,
-    change: "+12 %",
-    icon: PiggyBankIcon,
-  },
-] as const
+export function MonthlyOverview({
+  customer,
+  className,
+}: {
+  customer: Customer
+  className?: string
+}) {
+  const summary = [
+    {
+      label: "Revenus",
+      amount: customer.income,
+      icon: ArrowDownLeftIcon,
+    },
+    {
+      label: "Dépenses",
+      amount: customer.spending,
+      icon: ArrowUpRightIcon,
+    },
+    {
+      label: "Investir",
+      amount: customer.investment_balance,
+      icon: PiggyBankIcon,
+    },
+  ] as const
 
-const categories = [
-  {
-    label: "Mobilité",
-    percent: 28,
-    amount: 525.11,
-    icon: CarIcon,
-  },
-  {
-    label: "Courses",
-    percent: 35,
-    amount: 656.39,
-    icon: ShoppingBasketIcon,
-  },
-  {
-    label: "Bars & restaurants",
-    percent: 22,
-    amount: 412.59,
-    icon: UtensilsIcon,
-  },
-  {
-    label: "Autres dépenses",
-    percent: 15,
-    amount: 281.31,
-    icon: WalletIcon,
-  },
-] as const
+  const categories = [
+    {
+      label: "Mobilité",
+      percent: customer.mobility_pct,
+      amount: (customer.spending * customer.mobility_pct) / 100,
+      icon: CarIcon,
+    },
+    {
+      label: "Courses",
+      percent: customer.groceries_pct,
+      amount: (customer.spending * customer.groceries_pct) / 100,
+      icon: ShoppingBasketIcon,
+    },
+    {
+      label: "Bars & restaurants",
+      percent: customer.bars_restaurants_pct,
+      amount: (customer.spending * customer.bars_restaurants_pct) / 100,
+      icon: UtensilsIcon,
+    },
+    {
+      label: "Autres dépenses",
+      percent: customer.other_pct,
+      amount: (customer.spending * customer.other_pct) / 100,
+      icon: WalletIcon,
+    },
+  ] as const
 
-export function MonthlyOverview({ className }: { className?: string }) {
   return (
     <Card className={cn("w-full", className)}>
       <CardHeader>
@@ -89,9 +93,6 @@ export function MonthlyOverview({ className }: { className?: string }) {
                 <p className="text-xs text-muted-foreground">{item.label}</p>
                 <p className="truncate text-base font-semibold tabular-nums">
                   {formatEuro(item.amount)}
-                </p>
-                <p className="text-xs tabular-nums text-muted-foreground">
-                  {item.change} vs mois dernier
                 </p>
               </div>
             </div>
