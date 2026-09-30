@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "date": "2024-06-28",
+    "description": "Salaire — Employeur SA",
+    "category": "Salaire",
+    "account": "Compte courant",
+    "amount": 3420.0,
+    "status": "Complété"
+  },
+  {
+    "id": 2,
+    "date": "2024-06-27",
+    "description": "Carrefour Market",
+    "category": "Courses",
+    "account": "Compte courant",
+    "amount": -64.32,
+    "status": "Complété"
+  },
+  {
+    "id": 3,
+    "date": "2024-06-26",
+    "description": "Loyer appartement",
+    "category": "Logement",
+    "account": "Compte courant",
+    "amount": -950.0,
+    "status": "Complété"
+  },
+  {
+    "id": 4,
+    "date": "2024-06-25",
+    "description": "SNCB — Abonnement",
+    "category": "Transport",
+    "account": "Compte courant",
+    "amount": -49.0,
+    "status": "Complété"
+  },
+  {
+    "id": 5,
+    "date": "2024-06-24",
+    "description": "Virement reçu — Thomas L.",
+    "category": "Virement",
+    "account": "Compte courant",
+    "amount": 85.0,
+    "status": "Complété"
+  },
+  {
+    "id": 6,
+    "date": "2024-06-23",
+    "description": "Netflix",
+    "category": "Abonnements",
+    "account": "Carte Visa",
+    "amount": -15.99,
+    "status": "Complété"
+  },
+  {
+    "id": 7,
+    "date": "2024-06-22",
+    "description": "Pharmacie du Centre",
+    "category": "Santé",
+    "account": "Compte courant",
+    "amount": -28.5,
+    "status": "Complété"
+  },
+  {
+    "id": 8,
+    "date": "2024-06-21",
+    "description": "Épargne automatique",
+    "category": "Épargne",
+    "account": "Compte épargne",
+    "amount": 250.0,
+    "status": "Complété"
+  },
+  {
+    "id": 9,
+    "date": "2024-06-20",
+    "description": "Restaurant Chez Léon",
+    "category": "Restaurants",
+    "account": "Carte Visa",
+    "amount": -42.8,
+    "status": "Complété"
+  },
+  {
+    "id": 10,
+    "date": "2024-06-19",
+    "description": "Proximus — Facture",
+    "category": "Factures",
+    "account": "Compte courant",
+    "amount": -55.0,
+    "status": "Complété"
+  },
+  {
+    "id": 11,
+    "date": "2024-06-18",
+    "description": "Retrait ATM Bruxelles",
+    "category": "Espèces",
+    "account": "Compte courant",
+    "amount": -100.0,
+    "status": "Complété"
+  },
+  {
+    "id": 12,
+    "date": "2024-06-17",
+    "description": "Remboursement mutuelle",
+    "category": "Santé",
+    "account": "Compte courant",
+    "amount": 36.4,
+    "status": "Complété"
+  },
+  {
+    "id": 13,
+    "date": "2024-06-16",
+    "description": "Delhaize",
+    "category": "Courses",
+    "account": "Compte courant",
+    "amount": -78.15,
+    "status": "Complété"
+  },
+  {
+    "id": 14,
+    "date": "2024-06-15",
+    "description": "Spotify",
+    "category": "Abonnements",
+    "account": "Carte Visa",
+    "amount": -9.99,
+    "status": "Complété"
+  },
+  {
+    "id": 15,
+    "date": "2024-06-14",
+    "description": "Virement — Sophie M.",
+    "category": "Virement",
+    "account": "Compte courant",
+    "amount": -120.0,
+    "status": "En cours"
+  }
+]
