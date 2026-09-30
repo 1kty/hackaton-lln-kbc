@@ -9,38 +9,93 @@ import sqlite3
 from pathlib import Path
 from typing import Any
 
-
 CATEGORIES = ["mobility", "groceries", "bars_restaurants", "other"]
 
 MERCHANT_NAMES: dict[str, list[str]] = {
     "mobility": [
-        "Shell", "Texaco", "Lukoy", "Q8", "BikeHub", "De Lijn",
-        "SNCB", "Uber", "Dott", "Voi", "Cambio", "Parko",
+        "Shell",
+        "Texaco",
+        "Lukoy",
+        "Q8",
+        "BikeHub",
+        "De Lijn",
+        "SNCB",
+        "Uber",
+        "Dott",
+        "Voi",
+        "Cambio",
+        "Parko",
     ],
     "groceries": [
-        "Carrefour", "Delhaize", "Colruyt", "Aldi", "Lidl",
-        "Bio-Planet", "OKay", "Cru", "Färm", "Proxy",
+        "Carrefour",
+        "Delhaize",
+        "Colruyt",
+        "Aldi",
+        "Lidl",
+        "Bio-Planet",
+        "OKay",
+        "Cru",
+        "Färm",
+        "Proxy",
     ],
     "bars_restaurants": [
-        "Le Pain Quotidien", "Exki", "Bocca", "Café Central",
-        "La Belle Vie", "Bistro L", "Sushi Bar", "Pizza Hut",
-        "Friterie", "Café Belga", "Restaurant Yuzu", "Brasserie Nationale",
+        "Le Pain Quotidien",
+        "Exki",
+        "Bocca",
+        "Café Central",
+        "La Belle Vie",
+        "Bistro L",
+        "Sushi Bar",
+        "Pizza Hut",
+        "Friterie",
+        "Café Belga",
+        "Restaurant Yuzu",
+        "Brasserie Nationale",
     ],
     "other": [
-        "Amazon", "Zalando", "IKEA", "H&M", "Decathlon",
-        "Pharmacie", "Kinepolis", "Spotify", "Netflix", "Apple Store",
-        "Bol.com", "Action",
+        "Amazon",
+        "Zalando",
+        "IKEA",
+        "H&M",
+        "Decathlon",
+        "Pharmacie",
+        "Kinepolis",
+        "Spotify",
+        "Netflix",
+        "Apple Store",
+        "Bol.com",
+        "Action",
     ],
 }
 
 FIRST_NAMES = [
-    "Alex", "Camille", "Noor", "Robin", "Sam", "Lou",
-    "Jules", "Charlie", "Morgan", "Ari", "Sacha", "Max",
+    "Alex",
+    "Camille",
+    "Noor",
+    "Robin",
+    "Sam",
+    "Lou",
+    "Jules",
+    "Charlie",
+    "Morgan",
+    "Ari",
+    "Sacha",
+    "Max",
 ]
 
 LAST_NAMES = [
-    "Peeters", "Janssens", "Maes", "Jacobs", "Mertens", "Willems",
-    "Claes", "Goossens", "Wouters", "De Smet", "Dubois", "Lambert",
+    "Peeters",
+    "Janssens",
+    "Maes",
+    "Jacobs",
+    "Mertens",
+    "Willems",
+    "Claes",
+    "Goossens",
+    "Wouters",
+    "De Smet",
+    "Dubois",
+    "Lambert",
 ]
 
 
@@ -89,7 +144,9 @@ def _generate_transactions(
     return transactions
 
 
-def generate_clients(count: int, seed: int) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+def generate_clients(
+    count: int, seed: int
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
     """Return deterministic customer profiles and their transactions."""
     if count < 0:
         raise ValueError("count must be zero or greater")
@@ -214,10 +271,21 @@ def main() -> None:
     parser = argparse.ArgumentParser(
         description="Generate synthetic KBC hackathon customer data with transactions."
     )
-    parser.add_argument("--count", type=int, default=3, help="number of synthetic customers")
-    parser.add_argument("--seed", type=int, default=42, help="random seed for reproducible demo data")
-    parser.add_argument("--output", type=Path, default=Path("clients.json"), help="JSON output path")
-    parser.add_argument("--db", type=Path, default=Path("clients.db"), help="SQLite database output path")
+    parser.add_argument(
+        "--count", type=int, default=3, help="number of synthetic customers"
+    )
+    parser.add_argument(
+        "--seed", type=int, default=42, help="random seed for reproducible demo data"
+    )
+    parser.add_argument(
+        "--output", type=Path, default=Path("clients.json"), help="JSON output path"
+    )
+    parser.add_argument(
+        "--db",
+        type=Path,
+        default=Path("clients.db"),
+        help="SQLite database output path",
+    )
     args = parser.parse_args()
 
     clients, transactions = generate_clients(args.count, args.seed)
@@ -231,8 +299,12 @@ def main() -> None:
     )
 
     save_to_sqlite(clients, transactions, args.db)
-    print(f"Wrote {len(clients)} clients and {len(transactions)} transactions to {args.output}")
-    print(f"Seeded {len(clients)} clients and {len(transactions)} transactions into {args.db}")
+    print(
+        f"Wrote {len(clients)} clients and {len(transactions)} transactions to {args.output}"
+    )
+    print(
+        f"Seeded {len(clients)} clients and {len(transactions)} transactions into {args.db}"
+    )
 
 
 if __name__ == "__main__":
